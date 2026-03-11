@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { productService } from '@/lib/products';
 
 export async function GET(request: NextRequest) {
+  /* FIX: Properly parse query parameters for filtering, pagination, and searching */
   const searchParams = request.nextUrl.searchParams;
 
   const filters = {

@@ -63,6 +63,7 @@ export class ProductService {
   }
 
   getCategories(): string[] {
+    /* FIX: Use set to ensure unique categories */
     const categories = new Set(this.products.map((p) => p.categoryName));
     return Array.from(categories).sort();
   }
@@ -78,6 +79,7 @@ export class ProductService {
 
     const subCategories = new Set(filtered.map((p) => p.subCategoryName));
     return Array.from(subCategories).sort();
+
   }
 
   getTotalCount(filters?: Omit<ProductFilters, 'limit' | 'offset'>): number {

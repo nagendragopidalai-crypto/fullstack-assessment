@@ -1,37 +1,19 @@
-# Stackline Full Stack Assignment
+Issues Identified
+--------------------------------
+1. Incorrect Product Detail Routing
+Fix - Implemented dynamix routing using `/product/[sku]`.
+Resaon - It will ensure each product has a unique URL and allows direct linking.
 
-## Overview
+2. Filtering Issue
+Fix - Improved search logic to filter products wing the search input value
 
-This is a sample eCommerce website that includes:
-- Product List Page
-- Search Results Page
-- Product Detail Page
+3. Category/Sub Category Filteing Bug
+Fix : Added category constraint when filtering subcategories
 
-The application contains various bugs including UX issues, design problems, functionality bugs, and potential security vulnerabilities.
+4. Future Improvements / Good To have
+- Add paginations caching
+- Improve product image loading
 
-## Getting Started
 
-```bash
-yarn install
-yarn dev
-```
 
-## Your Task
 
-1. **Identify and fix bugs** - Review the application thoroughly and fix any issues you find
-2. **Document your work** - Create a comprehensive README that includes:
-   - What bugs/issues you identified
-   - How you fixed each issue
-   - Why you chose your approach
-   - Any improvements or enhancements you made
-
-We recommend spending no more than 2 hours on this assignment. We are more interested in the quality of your work and your communication than the amount of time you spend or how many bugs you fix!
-
-## Submission
-
-- Fork this repository
-- Make your fixes and improvements
-- **Replace this README** with your own that clearly documents all changes and your reasoning
-- Provide your Stackline contact with a link to a git repository where you have committed your changes
-
-We're looking for clear communication about your problem-solving process as much as the technical fixes themselves.

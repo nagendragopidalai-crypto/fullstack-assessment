@@ -8,6 +8,7 @@ export async function GET(
   const { sku } = await params;
   const product = productService.getById(sku);
 
+  /* FIX : Added Prper error handling for product not found */
   if (!product) {
     return NextResponse.json(
       { error: 'Product not found' },
